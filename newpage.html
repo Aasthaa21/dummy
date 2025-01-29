@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You're my Valentine!</title>
     <style>
-        /* Simple animation */
+        /* Centering the content */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #fff0f5; /* Light pink background for a romantic touch */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Heart animation */
         @keyframes heartBeat {
             0% { transform: scale(1); }
             50% { transform: scale(1.2); }
@@ -13,9 +25,19 @@
         }
 
         .heart {
-            font-size: 50px;
+            font-size: 80px;
             animation: heartBeat 1s infinite;
-            color: #FF6347;
+            color: #FF1493; /* Deep pink */
+            margin: 20px 0;
+        }
+
+        h1 {
+            color: #d63384;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
         }
     </style>
 </head>
